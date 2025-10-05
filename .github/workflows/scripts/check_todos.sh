@@ -7,5 +7,5 @@ while IFS= read -r -d '' file; do
         echo "TODO found in $file"
         exit 1
     fi
-done < <(find . -type f \( -name '*.js' -o -name '*.mjs' -o -name '*.ts' -o -name '*.vue' -o -name '*.yaml' \) -print0)
+done < <(find . -not -path "./node_modules/*" -type f \( -name '*.js' -o -name '*.mjs' -o -name '*.ts' -o -name '*.vue' -o -name '*.yaml' \) -print0)
 echo "No TODO found in code"
