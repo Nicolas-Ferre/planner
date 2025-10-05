@@ -10,8 +10,8 @@
         "postinstall": "nuxt prepare",
         "format": "prettier . --write",
         "format:check": "prettier . --check",
-        "lint": "eslint \"src/**/*.{js,ts}\"",
-        "lint:fix": "eslint --fix \"src/**/*.{js,ts}\""
+        "lint": "eslint",
+        "lint:fix": "eslint --fix"
     },
     "dependencies": {
         "@nuxt/eslint": "^1.9.0",
