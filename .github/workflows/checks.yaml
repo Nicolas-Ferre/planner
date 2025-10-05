@@ -8,8 +8,8 @@ on:
       - main
   pull_request:
     branches:
-      - '*'
-  workflow_dispatch: { }
+      - "*"
+  workflow_dispatch: {}
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "24"
-          cache: 'npm'
+          cache: "npm"
       - name: Install dependencies
         run: npm ci
       - name: Check lints
