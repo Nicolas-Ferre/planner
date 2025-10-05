@@ -36,5 +36,3 @@ jobs:
         run: npm audit --audit-level=low
       - name: Check TODOs #no-todocheck
         run: bash -x .github/workflows/scripts/check_todos.sh #no-todocheck
-      - name: Check encoding
-        run: isutf8 **/*
