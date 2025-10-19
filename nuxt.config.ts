@@ -7,5 +7,8 @@ export default defineNuxtConfig({
     typescript: {
         typeCheck: true,
     },
-    modules: ["@nuxt/eslint"],
+    modules: ["@nuxt/eslint", "@nuxt/ui"],
+    alias: {
+        "frappe-gantt/dist/frappe-gantt.css": "./node_modules/frappe-gantt/dist/frappe-gantt.css",
+    },
 });
